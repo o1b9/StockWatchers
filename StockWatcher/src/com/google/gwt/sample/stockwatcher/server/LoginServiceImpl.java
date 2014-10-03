@@ -22,7 +22,7 @@ public class LoginServiceImpl extends RemoteServiceServlet implements
       loginInfo.setLogoutUrl(userService.createLogoutURL(requestUri));
     } else {
     	//this is supposed to be false
-      loginInfo.setLoggedIn(false);
+      loginInfo.setLoggedIn(true);
       loginInfo.setLoginUrl(userService.createLoginURL(requestUri));
     }
     return loginInfo;
