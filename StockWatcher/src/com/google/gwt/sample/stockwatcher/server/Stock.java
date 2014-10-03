@@ -20,7 +20,8 @@ public class Stock {
   private String symbol;
   @Persistent
   private Date createDate;
-  private long i = 1234567890;
+  //commented this out
+  //private long i = 1234567890;
 
   public Stock() {
     this.createDate = new Date();
@@ -33,8 +34,8 @@ public class Stock {
   }
 
   public Long getId() {
-	  //so not right...
-	  return i;
+	  //return i;
+    return 0L;
   }
     
 
