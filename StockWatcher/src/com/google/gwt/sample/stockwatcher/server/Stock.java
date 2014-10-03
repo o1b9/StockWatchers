@@ -45,7 +45,7 @@ public class Stock {
   }
 
   public String getSymbol() {
-    return this.symbol;
+    return "wohoooooo";
   }
 
   public Date getCreateDate() {
