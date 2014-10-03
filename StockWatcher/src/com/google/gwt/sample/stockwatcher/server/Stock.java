@@ -32,7 +32,7 @@ public class Stock {
   }
 
   public Long getId() {
-    return this.id;
+    return 0L;
   }
 
   public User getUser() {
