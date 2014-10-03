@@ -15,9 +15,16 @@ public class LoginServiceImpl extends RemoteServiceServlet implements
     User user = userService.getCurrentUser();
     LoginInfo loginInfo = new LoginInfo();
 
-   //just got rid of an if statement here
-    System.out.print("muahaha I ruined the code!!");
-    
+    if (user != null) {
+      loginInfo.setLoggedIn(true);
+      loginInfo.setEmailAddress(user.getEmail());
+      loginInfo.setNickname(user.getNickname());
+      loginInfo.setLogoutUrl(userService.createLogoutURL(requestUri));
+    } else {
+    	//this is supposed to be false
+      loginInfo.setLoggedIn(true);
+      loginInfo.setLoginUrl(userService.createLoginURL(requestUri));
+    }
     return loginInfo;
   }
 
