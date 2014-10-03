@@ -25,7 +25,7 @@ public class GreetingServiceImpl extends RemoteServiceServlet implements
     //my add
     
     System.out.print("this is  greeting service, so let's say hello! HELLO!!! by S");
-    System.out.print("this is  greeting, so let's say hello! HELLO!!!");
+    System.out.print("this is  greeting, so let's say hello! **HELLO BY S, HELLO!!!");
 
     // Escape data from the client to avoid cross-site script vulnerabilities.
     input = escapeHtml(input);
