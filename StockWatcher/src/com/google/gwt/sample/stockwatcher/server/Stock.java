@@ -45,7 +45,11 @@ public class Stock {
   }
 
   public String getSymbol() {
+//<<<<<<< HEAD
     return "This is my change!";
+//=======
+    //return "wohoooooo";
+//>>>>>>> branch 'master' of https://github.com/o1b9/StockWatchers.git
   }
 
   public Date getCreateDate() {
