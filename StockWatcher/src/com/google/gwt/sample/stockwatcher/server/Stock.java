@@ -20,8 +20,6 @@ public class Stock {
   private String symbol;
   @Persistent
   private Date createDate;
-  //commented this out
-  //private long i = 1234567890;
 
   public Stock() {
     this.createDate = new Date();
@@ -34,7 +32,10 @@ public class Stock {
   }
 
   public Long getId() {
+//<<<<<<< HEAD
 	  //return i;
+//=======
+//>>>>>>> branch 'master' of https://github.com/o1b9/StockWatchers
     return 0L;
   }
     
